@@ -9,7 +9,7 @@ let (x,y) = (1,2)
 //let 2 = z
 
 if a == b {
-  print("Los valores de a y b son iguales")
+    print("Los valores de a y b son iguales")
 }
 
 1+2
@@ -56,23 +56,12 @@ if name == "Juan Gabriel" {
     print("Cuidado, ha aparecido un \(name) salvaje")
 }
 
-
 (1, "Juan Gabriel") < (2, "Ricardo Celis")
 (3, "Juan Gabriel") < (3, "Ricardo Celis")
 (3, "Ricardo") < (3, "Juan Gabriel")
 (4, "perro") == (4, "perro")
 
 ("perro", false) == ("perro", true)
-
-/*
- if question {
-    answer1
- } else{
-    answer2
- }
- */
-
-
 
 
 let contentHeight = 40
@@ -81,13 +70,13 @@ var rowHeight = 0
 
 rowHeight = contentHeight + (hasImage ? 50 : 10)
 
-
-
-
 let defaultAge = 18
 var userAge: Int?
 
 userAge = 31
+
+//Sino esta el valor se usa la que si se sabe, en este caso
+//hasta que se tenga el valor del usuario
 
 var ageToBeUsed = userAge ?? defaultAge
 // ageToBeUsed = (userAge != nil ? userAge! : defaultAge)
@@ -97,10 +86,15 @@ var userColorName: String? = "green"
 
 var colorNameToUse = userColorName ?? defaultColorName
 
+//incluye valores desde el 1 hasta el 5, incluyendo el 5
+var idx : Int
+idx = 0
+
 for idx in 1...5 {
     print(idx)
 }
 
+//incluye valores desde el 1 hasta el 5, Sin incluir el 5
 for idx in 1..<5{
     print(idx)
 }
@@ -114,7 +108,7 @@ for name in names[1...]{
     print(name)
 }
 
-for name in names[..<2]{
+for name  in  names [..<2] {
     print(name)
 }
 
@@ -129,7 +123,6 @@ let allowEntry = false
 if !allowEntry{
     print("ACCESO DENEGADO")
 }
-
 
 let enterDoorCode = false
 let passRetinaScan = true
